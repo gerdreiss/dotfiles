@@ -1,0 +1,59 @@
+# python
+alias py=python
+alias py3=python3
+
+# exa based aliases
+alias l='exa --long --inode --group-directories-first'
+alias ll='exa --all --long --inode --group-directories-first'
+alias lll='exa --all --long --inode --group-directories-first'
+alias la='exa -Ga --group-directories-first'
+
+# mac
+alias resetdock='defaults write com.apple.dock ResetLaunchPad -bool true; killall Dock'
+alias rmdsstore='find ~/ -name ".DS_Store" -depth -exec rm {} \;'
+alias rmalldsstore='sudo find / -name ".DS_Store" -depth -exec rm {} \;'
+
+# mac
+alias resetdock='defaults write com.apple.dock ResetLaunchPad -bool true; killall Dock'
+alias rmdsstore='find ~/ -name ".DS_Store" -depth -exec rm {} \;'
+alias rmalldsstore='sudo find / -name ".DS_Store" -depth -exec rm {} \;'
+
+# misc
+alias brute='brewsage --tui'
+alias mktgz='tar -czvf'
+alias sup='scala-update'
+
+# docker
+alias drm='docker rm $(docker ps -a -q)'
+alias dstop='docker stop $(docker ps -a -q)'
+alias drmi='docker rmi $(docker images -q)'
+alias dprune='docker system prune'
+alias doit='docker exec -it'
+alias dovo='docker volume'
+
+# navigate
+alias lib='cd ~/Library'
+
+# update
+alias sdkup='sdk update && sdk upgrade'
+alias uprust='rustup update'
+alias gitup='gitallup -r -p ~/Workspace -a ~/.gitallup/actions.properties'
+alias upall='bubu && sdkup && uprust && gitup'
+
+# dev
+alias getgitignore='wget https://raw.githubusercontent.com/gerdreiss/dotfiles/main/dev/scala/.gitignore'
+alias gets3fmt='wget -O .scalafmt.conf https://raw.githubusercontent.com/gerdreiss/dotfiles/main/dev/scala/.scala3fmt.conf'
+alias gets2fmt='wget -O .scalafmt.conf https://raw.githubusercontent.com/gerdreiss/dotfiles/main/dev/scala/.scala2fmt.conf'
+alias brit='brittany --write-mode=inplace'
+alias c='code .'
+alias lg='lazygit'
+alias k8='kubectl'
+alias jv='java -version'
+
+# homebrew
+alias brstart='brew services start --all'
+alias brstop='brew services stop --all'
+
+# exercism
+alias exsub='exercism submit'
+alias exsubrs='exercism submit src/lib.rs'
