@@ -30,6 +30,9 @@ alias drmi='docker rmi $(docker images -q)'
 alias dprune='docker system prune'
 alias doit='docker exec -it'
 alias dovo='docker volume'
+alias dk='docker kill'
+alias dpsa='docker ps -a'
+alias dpst='docker ps --format "table {{.ID}}\t{{.Names}}\t{{.Status}}"'
 
 # navigate
 alias lib='cd ~/Library'
