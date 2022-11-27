@@ -13,11 +13,6 @@ alias resetdock='defaults write com.apple.dock ResetLaunchPad -bool true; killal
 alias rmdsstore='find ~/ -name ".DS_Store" -depth -exec rm {} \;'
 alias rmalldsstore='sudo find / -name ".DS_Store" -depth -exec rm {} \;'
 
-# mac
-alias resetdock='defaults write com.apple.dock ResetLaunchPad -bool true; killall Dock'
-alias rmdsstore='find ~/ -name ".DS_Store" -depth -exec rm {} \;'
-alias rmalldsstore='sudo find / -name ".DS_Store" -depth -exec rm {} \;'
-
 # misc
 alias brute='brewsage --tui'
 alias mktgz='tar -czvf'
@@ -41,7 +36,7 @@ alias lib='cd ~/Library'
 alias sdkup='sdk update && sdk upgrade'
 alias uprust='rustup update'
 alias gitup='gitallup -r -p ~/Workspace -a ~/.gitallup/actions.properties'
-alias upall='bubu && sdkup && uprust && gitup'
+alias upall='omz update && bubu && sdkup && uprust && gitup'
 
 # dev
 alias getgitignore='wget https://raw.githubusercontent.com/gerdreiss/dotfiles/main/dev/scala/.gitignore'
